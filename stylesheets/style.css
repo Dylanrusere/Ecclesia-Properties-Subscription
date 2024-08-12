@@ -106,3 +106,27 @@
     border: 1px solid #84593f;
     color: #84593f;
 }
+
+.subscribe_now{
+    margin-top: 3%;
+    border: none;
+    padding: 1% 2%;
+    background-color: #FFffff;
+    cursor: pointer;
+    color: #84593f;
+    transition: 0.5s ease-in-out;
+
+    @media(max-width:600px){
+        padding: 2% 3%;
+    }
+
+    @media(max-width:430px){
+        width: 100%;
+    }
+}
+
+.subscribe_now:hover{
+    background-color: transparent;
+    border: 1px solid #FFffff;
+    color: #FFffff;
+}
