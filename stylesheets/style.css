@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'century_gothicregular';
+    background-color: #84593f;
+}
+
+#hero_section{
+    padding: 3% 0 5% 0;
+}
+
+.logo_container{
+    text-align: center;
+}
+
+.logo_img{
+    width: 100px;
+}
+
+.signup_text{
+    color: #FFffff;
+    font-weight: 600;
+}
+
+.overall_container{
+    margin: 0 5%;
+}
+
+#contact-form{
+    background-color: #FFffff;
+    padding: 2% 4%;
+    border-radius: 20px;
+    margin-top: 2%;
+
+    @media(max-width:700px){
+        padding: 3% 4%;
+    }
+
+    @media(max-width:450px){
+        padding: 5% 4%;
+    }
+}
+
+.input_contact{
+    outline: none;
+    color: #84593f;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    padding: 0.5% 1% 1% 1.5%;
+    background-color: transparent;
+    border: 1px solid #84593f;
+    border-radius: 10px;
+
+    @media(max-width:430px){
+        width: 96.5%;
+    }
+}
+
+.email{
+    margin-top: 3%;
+
+    @media(max-width:500px){
+        margin-top: 5%;
+    }
+}
+
+.input_textarea{
+    outline: none;
+    color: #84593f;
+    width: 100%;
+    margin-top: 8px;
+    padding: 1.5%;
+    background-color: transparent;
+    border: 1px solid #84593f;
+    border-radius: 10px;
+    margin-top: 3%;
+
+    @media(max-width:430px){
+        width: 96.5%;
+    }
+}
+
+.contact_send{
+    margin-top: 3%;
+    border: none;
+    padding: 1% 2%;
+    background-color: #84593f;
+    cursor: pointer;
+    color: #FFffff;
+    transition: 0.5s ease-in-out;
+
+    @media(max-width:600px){
+        padding: 2% 3%;
+    }
+
+    @media(max-width:430px){
+        width: 100%;
+    }
+}
+
+.contact_send:hover{
+    background-color: transparent;
+    border: 1px solid #84593f;
+    color: #84593f;
+}
