@@ -43,21 +43,13 @@
             'Accept': 'application/json'
             }
         }).then(function(response) {
-            var responseDiv = document.getElementById('form-response');
             if (response.ok) {
-            responseDiv.style.display = 'block';
-            responseDiv.style.color = '#FFCC00';
-            responseDiv.textContent = 'Thank you! Your submission has been received.';
-            document.getElementById('contact-form').reset(); // Optionally reset the form
-
-            // Redirect to another page after 3 seconds
-            setTimeout(function() {
-                window.location.href = 'success.html'; // Replace 'success.html' with the path to your desired page
-            }, 3000); // 3000 milliseconds = 3 seconds
-
+            // Redirect to another page immediately
+            window.location.href = 'success.html'; // Replace 'success.html' with the path to your desired page
             } else {
+            var responseDiv = document.getElementById('form-response');
             responseDiv.style.display = 'block';
-            responseDiv.style.color = 'red';
+            responseDiv.style.color = '#ffffff';
             responseDiv.textContent = 'There was a problem with your submission. Please try again.';
 
             // Hide the message after 10 seconds
@@ -77,6 +69,7 @@
             }, 10000); // 10000 milliseconds = 10 seconds
         });
         });
+
 
     </script>
 </body>
