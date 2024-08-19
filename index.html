@@ -20,7 +20,6 @@
                 <input type="text" name="name" placeholder="Enter Last Name" class="input_contact email" required data-aos="fade-right" data-aos-duration="1500">
                 <input type="tel" name="number" placeholder="Enter Mobile Number" class="input_contact email" required data-aos="fade-right" data-aos-duration="2000">
                 <input type="email" name="email" placeholder="Enter Email Address" class="input_contact email" required data-aos="fade-right" data-aos-duration="2500">
-                <textarea name="message" rows="6" placeholder="Your Message" class="input_textarea" required data-aos="fade-right" data-aos-duration="3000"></textarea>
                 <button type="submit" class="contact_send" data-aos="slide-up" data-aos-duration="3000">Submit</button>
             </form>
             <div id="form-response" style="display:none; margin-top: 20px;"></div>
@@ -36,7 +35,7 @@
         var formData = new FormData(event.target);
         
         // Send form data using Fetch API
-        fetch('https://formspree.io/f/xldrbjqd', {
+        fetch('https://formspree.io/f/xzzpagjg', {
             method: 'POST',
             body: formData,
             headers: {
